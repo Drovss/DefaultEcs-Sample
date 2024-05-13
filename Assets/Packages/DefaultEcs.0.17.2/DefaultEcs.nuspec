@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>DefaultEcs</id>
+    <version>0.17.2</version>
+    <authors>Paillat Laszlo</authors>
+    <license type="expression">MIT-0</license>
+    <licenseUrl>https://licenses.nuget.org/MIT-0</licenseUrl>
+    <icon>logo.png</icon>
+    <projectUrl>https://github.com/Doraku/DefaultEcs</projectUrl>
+    <description>Entity Component System framework aiming for syntax and usage simplicity with maximum performance for game development.</description>
+    <releaseNotes>## Bug fixes
+- fixed a specific case when an Entity is removed from a EntitySortedSet (thanks to @Helco)</releaseNotes>
+    <tags>gamedev game-development game-engine ecs entity-component-system</tags>
+    <repository type="git" url="https://github.com/Doraku/DefaultEcs.git" commit="3ecf7e393f16d29584278825aa104b9515a15394" />
+    <dependencies>
+      <group targetFramework=".NETStandard1.1">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="System.Memory" version="4.5.4" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.Emit.Lightweight" version="4.7.0" exclude="Build,Analyzers" />
+        <dependency id="System.ValueTuple" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Memory" version="4.5.4" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.Emit.Lightweight" version="4.7.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.1" />
+    </dependencies>
+  </metadata>
+</package>
